@@ -102,3 +102,11 @@ When a user clicks "Claim This Deal":
 2.  **Env**: Set up `backend/.env` with `MONGODB_URI` and `JWT_SECRET`.
 3.  **Seed**: Run `npm run seed` in the `backend` folder to populate initial deals.
 4.  **Dev**: Run `npm run dev` in both folders.
+
+## 🌐 Deployment (Vercel)
+
+This project is a monorepo. To deploy the frontend on Vercel:
+
+1.  **Project Root**: When importing the project, set the **Root Directory** to `frontend`.
+2.  **Env Vars**: Add `NEXT_PUBLIC_API_URL` pointing to your deployed backend.
+3.  **Build Settings**: Use the default Next.js build settings.
